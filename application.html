@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Introspect - Application</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="project.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>
+                    <img id="logo" src="images/logo.png" alt="Comopany Logo"
+                        height="100" width="100">
+                    The Introspect Experience
+                </h1>
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="creativeteam.html">Creative Team</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="applynow.html">Apply</a>
+                </ul>
+            </nav>
+
+            <main id="application">
+                <div id="formcontainer">
+                    <form method="post" 
+                    action="https://webdevbasics.net/scripts/demo.php">
+                        <fieldset>
+                            <legend>
+                                Introspect Application
+                            </legend>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" 
+                            tabindex="1" required>
+
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" 
+                            tabindex="2" required>
+
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" name="dob" id="dob" 
+                            tabindex="3" required>
+
+                            <label for="tshirt">T-Shirt Size:</label>
+                            <div>
+                                <input type="radio" name="tshirt" id="xsmall" value="XS" 
+                                tabindex="4" required>
+                                <label for="xsmall">Extra Small</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="tshirt" id="small" value="S" 
+                                tabindex="5" required>
+                                <label for="small">Small</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="tshirt" id="medium" value="M" 
+                                tabindex="6" required>
+                                <label for="medium">Medium</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="tshirt" id="large" value="L" 
+                                tabindex="7" required>
+                                <label for="large">Large</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="tshirt" id="xlarge" value="XL" 
+                                tabindex="8" required>
+                                <label for="xlarge">Extra Large</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="tshirt" id="xxlarge" value="XXL" 
+                                tabindex="9" required>
+                                <label for="xxlarge">Double XL</label>
+                            </div>
+
+                            <label for="describe">Three words that describe you as a 
+                                person:</label>
+                            <input type="text" name="describe" id="describe" 
+                            tabindex="10" required>
+
+                            <label for="love">What is something you love about 
+                                yourself?:</label>
+                            <textarea type="text" name="love" id="love" 
+                                cols="40" rows="10" tabindex="11" required></textarea>
+
+                            <label for="unique">What is something unique that you
+                                bring to the dance space?:</label>
+                            <textarea type="text" name="unique" id="unique" 
+                                cols="40" rows="10" tabindex="12" required></textarea>
+
+                            <label for="inspire">What inspires you to move, create,
+                                and dance?:</label>
+                            <textarea type="text" name="inspire" id="inspire" 
+                            cols="40" rows="10" tabindex="13" required></textarea>
+
+                            <label for="experience">What do you hope to gain from this 
+                                experience?:</label>
+                            <textarea name="experience" id="experience" cols="40" 
+                            rows="10" tabindex="14" required></textarea>
+
+                            <input type="submit" value="Submit Application"
+                            tabindex="15">
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+
+            <footer>
+                Copyright &copy; Jay Hicks <br>
+                <a href="mailto:ahicks12@my.westga.edu">
+                    ahicks12@my.westga.edu
+                </a>
+            </footer>
+        </div>
+    </body>
+</html>

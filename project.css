@@ -1,0 +1,476 @@
+body {
+    font-family: "Times New Roman", Georgia, serif;
+    background-color: #c09b8724;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: auto;
+}
+
+header h1 {
+    display: flex;
+    background-color: #6B948F;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: #000000;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+header h1 img {
+    vertical-align: middle;
+    background-color: #262626;
+    border-radius: 5px;
+}
+
+nav {
+    background-color: #a58879b3;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15pt;
+}
+
+main p {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #a58879b3;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h2 {
+    text-align: center;
+}
+
+#groupphoto {
+    background-image: url(images/groupphoto.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+#singledancer {
+    background-image: url(images/singledancer.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 100%
+}
+
+#ratestable {
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+#ratestable td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+#ratestable th {
+    background-color: #a58879b3;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+#ratestable .services {
+    font-size: 15pt;
+}
+
+#ratestable .names {
+    background-color: #6B948F;
+    font-size: 13pt;
+}
+
+#ratestable #cornerbox {
+    background-color: #262626;
+}
+
+#appinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+#applink {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#appinfo a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20pt;
+    align-self: center;
+    background-color: #a58879b3;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px #000000;
+}
+
+#appinfo h3 {
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#formcontainer {
+    width: 300px;
+}
+
+legend {
+    text-align: center;
+}
+
+#aboutbackground {
+    background-image: url(images/groupphoto2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutbackdrop {
+    width: 70%;
+    height: auto;
+    background-color: #a58879;
+    opacity: 1;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+#creative {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#megan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#megan img {
+    width: 70%;
+}
+
+#sarah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sarah img {
+    width: 50%;
+}
+
+#contactcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#contactcontainer #contactgirl {
+    background-image: url(images/dancingirl3.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#contactinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a58879b3;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #000000;
+    width: 90%;
+}
+
+#contactinfo ul {
+    padding: 0;
+}
+
+#contactinfo a {
+    color: #000000;
+}
+
+#galleryfix {
+    display: flex;
+    flex-direction: column;
+}
+
+#videogalleryfix {
+    display: flex;
+    flex-direction: column;
+}
+
+#gallerycontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#photogallerycontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#videogallerycontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#photogallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a58879b3;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px #000000;
+}
+
+#videogallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a58879b3;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px #000000;
+}
+
+#videogallery a {
+    color: #000000;
+}
+
+#photogallery a {
+    color: #000000;
+}
+
+#girl1 {
+    background-image: url(images/dancinggirl.jpg);
+    height: 400px;
+    width: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#videostyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 425px) {
+    #application {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 800px) {
+    #gallerycontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #photogallerycontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #videogallerycontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #videogallery {
+        order: 1;
+    }
+
+    #videogallerycontainer video {
+        order: 2;
+    }
+
+    #videostyle {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    @supports (display: grid) {
+        #index {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "groupphoto groupphoto groupphoto" 
+            "testimonial1 singledancer testimonial2";
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+
+        #creative {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav ul {
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+
+        #testimonial1 {
+            grid-area: testimonial1;
+        }
+
+        #testimonial2 {
+            grid-area: testimonial2;
+        }
+
+        #groupphoto {
+            grid-area: groupphoto;
+        }
+
+        #singledancer {
+            grid-area: singledancer;
+        }
+
+        #megan {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        #megan img {
+            flex: 1;
+        }
+
+        #megan p {
+            flex: 1;
+            font-size: 15pt;
+        }
+
+        #sarah {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #sarah img {
+            order: 1;
+            flex: 1;
+        } 
+
+        #sarah p {
+            font-size: 15pt;
+            flex: 1;
+        }
+
+        #formcontainer {
+            width: 600px;
+        }
+
+        #appinfo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 2px solid #000000;
+        }
+
+        #contactcontainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        #contactgirl {
+            flex: 1;
+        }
+
+        #contactinfo {
+            flex: 1;
+        }
+    }
+}

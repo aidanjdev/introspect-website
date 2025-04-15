@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Introspect - About</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project.css" />
+  </head>
+
+  <body>
+    <script>
+      window.SnipcartSettings = {
+        publicApiKey: "ZmE5MDk5MGMtNDY0Yy00M2U1LWFmYmMtNWE5MDlkN2EwNDYzNjM4ODAzNDk4MTg4OTczNTY5",
+        loadStrategy: "on-user-interaction",
+      };
+
+      (function () {
+        var c, d;
+        (d = (c = window.SnipcartSettings).version) != null ||
+          (c.version = "3.0");
+        var s, S;
+        (S = (s = window.SnipcartSettings).timeoutDuration) != null ||
+          (s.timeoutDuration = 2750);
+        var l, p;
+        (p = (l = window.SnipcartSettings).domain) != null ||
+          (l.domain = "cdn.snipcart.com");
+        var w, u;
+        (u = (w = window.SnipcartSettings).protocol) != null ||
+          (w.protocol = "https");
+        var m, g;
+        (g = (m = window.SnipcartSettings).loadCSS) != null || (m.loadCSS = !0);
+        var y =
+            window.SnipcartSettings.version.includes("v3.0.0-ci") ||
+            (window.SnipcartSettings.version != "3.0" &&
+              window.SnipcartSettings.version.localeCompare("3.4.0", void 0, {
+                numeric: !0,
+                sensitivity: "base",
+              }) === -1),
+          f = ["focus", "mouseover", "touchmove", "scroll", "keydown"];
+        window.LoadSnipcart = o;
+        document.readyState === "loading"
+          ? document.addEventListener("DOMContentLoaded", r)
+          : r();
+        function r() {
+          window.SnipcartSettings.loadStrategy
+            ? window.SnipcartSettings.loadStrategy === "on-user-interaction" &&
+              (f.forEach(function (t) {
+                return document.addEventListener(t, o);
+              }),
+              setTimeout(o, window.SnipcartSettings.timeoutDuration))
+            : o();
+        }
+        var a = !1;
+        function o() {
+          if (a) return;
+          a = !0;
+          let t = document.getElementsByTagName("head")[0],
+            n = document.querySelector("#snipcart"),
+            i = document.querySelector(
+              'src[src^="'
+                .concat(window.SnipcartSettings.protocol, "://")
+                .concat(
+                  window.SnipcartSettings.domain,
+                  '"][src$="snipcart.js"]'
+                )
+            ),
+            e = document.querySelector(
+              'link[href^="'
+                .concat(window.SnipcartSettings.protocol, "://")
+                .concat(
+                  window.SnipcartSettings.domain,
+                  '"][href$="snipcart.css"]'
+                )
+            );
+          n ||
+            ((n = document.createElement("div")),
+            (n.id = "snipcart"),
+            n.setAttribute("hidden", "true"),
+            document.body.appendChild(n)),
+            h(n),
+            i ||
+              ((i = document.createElement("script")),
+              (i.src = ""
+                .concat(window.SnipcartSettings.protocol, "://")
+                .concat(window.SnipcartSettings.domain, "/themes/v")
+                .concat(
+                  window.SnipcartSettings.version,
+                  "/default/snipcart.js"
+                )),
+              (i.async = !0),
+              t.appendChild(i)),
+            !e &&
+              window.SnipcartSettings.loadCSS &&
+              ((e = document.createElement("link")),
+              (e.rel = "stylesheet"),
+              (e.type = "text/css"),
+              (e.href = ""
+                .concat(window.SnipcartSettings.protocol, "://")
+                .concat(window.SnipcartSettings.domain, "/themes/v")
+                .concat(
+                  window.SnipcartSettings.version,
+                  "/default/snipcart.css"
+                )),
+              t.prepend(e)),
+            f.forEach(function (v) {
+              return document.removeEventListener(v, o);
+            });
+        }
+        function h(t) {
+          !y ||
+            ((t.dataset.apiKey = window.SnipcartSettings.publicApiKey),
+            window.SnipcartSettings.addProductBehavior &&
+              (t.dataset.configAddProductBehavior =
+                window.SnipcartSettings.addProductBehavior),
+            window.SnipcartSettings.modalStyle &&
+              (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle),
+            window.SnipcartSettings.currency &&
+              (t.dataset.currency = window.SnipcartSettings.currency),
+            window.SnipcartSettings.templatesUrl &&
+              (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl));
+        }
+      })();
+    </script>
+    <div id="wrapper">
+      <header>
+        <h1>
+          <img
+            id="logo"
+            src="images/logo.png"
+            alt="Comopany Logo"
+            height="100"
+            width="100"
+          />
+          The Introspect Experience
+        </h1>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="creativeteam.html">Creative Team</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="applynow.html">Apply</a></li>
+          <li><a href="coaching.html">Coaching</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <h2>Hire Our Team!</h2>
+        <div id="productwrapper">
+          <div class="products">
+            <img
+              src="images/megan.jpg"
+              alt="a picture of coach megan"
+              width="300"
+              height="400"
+            />
+            <p>Private lesson with Megan Long</p>
+            <button
+              class="buy-button snipcart-add-item"
+              data-item-id="1"
+              data-item-price="80.00"
+              data-item-url="/"
+              data-item-name="Megan Private Lesson"
+            >
+              Add to Cart &lpar;$80.00&rpar;
+            </button>
+          </div>
+
+          <div class="products">
+            <img
+              src="images/sarah.jpg"
+              alt="a picture of coach sarah"
+              width="300"
+              height="400"
+            />
+            <p>Private Lesson with Sarah Stokes</p>
+            <button
+              class="buy-button snipcart-add-item"
+              data-item-id="2"
+              data-item-price="70.00"
+              data-item-url="/"
+              data-item-name="Sarah Private Lesson"
+            >
+              Add to Cart &lpar;$70.00&rpar;
+            </button>
+          </div>
+
+          <div class="products">
+            <img
+              src="images/noelle.jpg"
+              alt="a picture of coach noelle"
+              width="300"
+              height="400"
+            />
+            <p>Private Lesson with Noelle Dave</p>
+            <button
+              class="buy-button snipcart-add-item"
+              data-item-id="3"
+              data-item-price="70.00"
+              data-item-url="/"
+              data-item-name="Noelle Private Lesson"
+            >
+              Add to Cart &lpar;$70.00&rpar;
+            </button>
+          </div>
+
+          <div class="products">
+            <img
+              src="images/jess.jpg"
+              alt="a picture of coach jess"
+              width="300"
+              height="400"
+            />
+            <p>Private Lesson with Jess Huber</p>
+            <button
+              class="buy-button snipcart-add-item"
+              data-item-id="4"
+              data-item-price="75.00"
+              data-item-url="/"
+              data-item-name="Jess Private Lesson"
+            >
+              Add to Cart &lpar;$75.00&rpar;
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        Copyright &copy; Jay Hicks <br />
+        <a href="mailto:ahicks12@my.westga.edu"> ahicks12@my.westga.edu </a>
+      </footer>
+    </div>
+  </body>
+</html>

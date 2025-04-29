@@ -19,6 +19,22 @@
                 " to you with more information as soon as possible!";
                 alert(thanksMessage);
             }
+
+            function validateName() {
+                var applicantName = document.getElementById("name").value;
+                var errorMessage = 
+                "Sorry, the name input contains characters other than " + 
+                "spaces and letters";
+
+                if (!(/^[A-Za-z ]+$/.test(applicantName))) {
+                    alert(errorMessage);
+                    return false
+                }
+
+                thankUser();
+
+                return true
+            }
         </script>
     </head>
 
@@ -48,7 +64,7 @@
                 <div id="formcontainer">
                     <form method="post" 
                     action="https://webdevbasics.net/scripts/demo.php"
-                    onsubmit="thankUser()">
+                    onsubmit="return validateName();" id="myform">
                         <fieldset>
                             <legend>
                                 Introspect Application

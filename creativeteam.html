@@ -10,6 +10,15 @@
         content="Our faculty boasts top industry professionals with decades of 
         experience teaching at reputable companies. Premium dance lessons 
         offered at affordable rates.">
+        <script>
+            function coachingInformationAlert() {
+                var information = 
+                "Submit any questions about services provided " +
+                "by our staff as well as pricing, to the email " +
+                "located on the Contact page";
+                alert(information);
+            }
+        </script>
     </head>
 
     <body>
@@ -70,7 +79,7 @@
                     </p>
                 </div>
                 
-                    <table id="ratestable">
+                    <table id="ratestable" onmouseover="coachingInformationAlert();">
                         <caption><h2>&#8226; Hire Our Professionals &#8226;</h2></caption>
                         <thead>
                             <tr>

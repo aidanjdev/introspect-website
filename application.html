@@ -10,6 +10,16 @@
         content="Fill out an application for the Introspect Experience. A summer
         dance program for dancers 12+ interested in receiving instruction from
         industry professionals.">
+        <script>
+            function thankUser() {
+                var applicantName = document.getElementById("name").value;
+                var thanksMessage = 
+                "Thank you " + applicantName + " " +
+                "for filling out our application! We will get back" + 
+                " to you with more information as soon as possible!";
+                alert(thanksMessage);
+            }
+        </script>
     </head>
 
     <body>
@@ -37,7 +47,8 @@
             <main id="application">
                 <div id="formcontainer">
                     <form method="post" 
-                    action="https://webdevbasics.net/scripts/demo.php">
+                    action="https://webdevbasics.net/scripts/demo.php"
+                    onsubmit="thankUser()">
                         <fieldset>
                             <legend>
                                 Introspect Application
